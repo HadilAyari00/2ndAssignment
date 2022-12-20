@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="script.js"></script>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+
+<title>Game keeper</title>
+  <meta charset="utf-8"/>
+</head>
+<body> 
+	<form onsubmit="return formSubmitted();">
+	 <fieldset>
+    <legend>Game information</legend>
+		<label for="name">Name of the game:</label><br>
+		<input type="text" id="name" name="name" required><br>
+	  
+		<label for="platforms">Available on:</label><br>
+		<input type="checkbox" id="xbox" name="platforms" value="Xbox Series"> Xbox Series<br>
+		<input type="checkbox" id="ps5" name="platforms" value="PS5"> PS5<br>
+		<input type="checkbox" id="pc" name="platforms" value="PC"> PC<br>
+		<input type="checkbox" id="switch" name="platforms" value="Switch"> Switch<br>
+		<input type="checkbox" id="android" name="platforms" value="Android"> Android<br>
+		<input type="checkbox" id="ios" name="platforms" value="iOS"> iOS<br>
+	  
+		<label for="publisher">Publisher:</label><br>
+		<input type="text" id="publisher" name="publisher" required><br>
+	  
+		<label for="category">Category:</label><br>
+		<select id="category" name="category" required>
+		  <option value="fps">FPS</option>
+		  <option value="action">Action</option>
+		  <option value="action-adventure">Action Adventure</option>
+		  <option value="strategy">Strategy</option>
+		</select>
+		
+		<label for="release_date">Release date:</label><br>
+		<input type="date" id="release_date" name="release_date"><br>
+	  
+		<label for="cover_url">URL with the image of the game cover:</label><br>
+		<input type="text" id="cover_url" name="cover_url" required><br>
+
+		<br>
+		<button id="submit_button">Add new Game</button>
+		 </fieldset>
+	</form>
+	
+  <h2>List of Games</h2> 
+  <input type="text" class="search" id="search-field" onkeyup="searchTable()" placeholder="Search for names..">
+  <button class="pages" id="prev-page"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </button>
+  <button class="pages" id="next-page"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </button>
+  <table id="Games">
+
+  </table>
+
+	<p><button onclick="emptyList();">Empty</button> 
+	 <button onclick="cm.save();">Save</button> 
+   <button onclick="loadList();">Load</button>
+	</p>
+
+	
+
+</body>
+</html>

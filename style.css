@@ -1,0 +1,158 @@
+/* Style the table */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+/* Style the table cells */
+td, th {
+  border: 1px solid rgb(208, 204, 204);
+  padding: 8px;
+  text-align: center;
+  
+}
+
+/* Style the table header */
+th {
+  background-color: #253b4d;
+  color: white;
+}
+
+/* Style the cover photo */
+.cover-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+} 
+#submit_button{
+    /* Add some basic styling */
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #404970;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+/* Style the fieldset element */
+fieldset {
+  /* Add some basic styling */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+  /* Style the legend element */
+  legend {
+    /* Add some basic styling */
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 8px;
+  }
+
+
+label {
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+
+input:invalid:not(#search-field) {
+  background-color:pink;
+}
+
+input:valid:not(#search-field) {
+  background-color:rgb(195, 213, 195);
+}
+#search-field{
+  margin-left: 350px;
+}
+.pages{
+  width: 5%;
+  height: 50%;
+}
+th a {
+  display: block;
+}
+
+input[type="text"] {
+  /* Add some basic styling */
+  width: 40%;
+  padding: 12px 20px;
+  margin: 1px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  /* Add some hover effects */
+  transition: 0.5s;
+  
+
+}
+
+label {
+  /* Add some basic styling */
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 1px;
+}
+
+/* Style the select element */
+select {
+  /* Add some basic styling */
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #444;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Style the dropdown arrow */
+  
+}
+
+/* Style the option elements */
+option {
+  /* Add some basic styling */
+  font-size: 16px;
+  color: #444;
+
+
+}
+
+/* Style the input element */
+input[type="date"] {
+  /* Add some basic styling */
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #444;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+}
+
+
